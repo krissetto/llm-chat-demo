@@ -1,0 +1,42 @@
+# .dockerignore file for Python project
+
+# Python-specific patterns
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+
+# Development artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+dist/
+build/
+out/
+test/
+tests/
+
+# Version control
+.git/
+.gitignore
+
+# Environment and secrets
+.env*
+*.env
+*.pem
+*.key
+*.crt
+
+# Project-specific patterns
+docs/
+*.md
+README*
+Dockerfile*
+docker-compose*
+tmp/
+temp/
+*.tmp
+.local/
+local/
