@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: ./
+    restart: unless-stopped
+    networks:
+      - app_network
+    # env_file: ./.env  # Uncomment if .env file exists
+networks:
+  app_network:
+    driver: bridge
